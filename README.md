@@ -8,7 +8,7 @@ Idea from orrefailat#6294
 If you want to run this script from your terminal without specifying the filename, run:
 
 ```
-cp /path/to/the/script /usr/local/bin/name
+sudo cp /path/to/the/script /usr/local/bin/name
 ```
 
 where name is the name you want to use when calling this script (make sure you're not using
