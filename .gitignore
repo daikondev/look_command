@@ -1,0 +1,6 @@
+#pyenv
+.python-version
+#system stuff
+.idea
+.DS_Store
+.env
