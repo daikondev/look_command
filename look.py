@@ -17,10 +17,10 @@ target_dir = Path(args.path)
 
 
 def build_output(entry):
-    perm = stat.filemode(entry.stat().st_mode)
-    size = entry.stat().st_size
+    perm = stat.filemode(entry.stat(follow_symlinks=False).st_mode)
+    size = entry.stat(follow_symlinks=False).st_size
     date = datetime.datetime.fromtimestamp(
-        entry.stat().st_mtime).strftime(
+        entry.stat(follow_symlinks=False).st_mtime).strftime(
         "%b %d %H:%M:%S"
     )
     return f"{perm} {size:>6d}   {date}  {entry.name}"
