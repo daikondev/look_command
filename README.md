@@ -3,7 +3,7 @@
 Made because I wanted to try out making a simple cli tool. 
 Idea from orrefailat#6294
 
-##### Suggested usage (macOS only):
+#### Suggested usage (macOS only):
 
 If you want to run this script from your terminal without specifying the filename, run:
 
