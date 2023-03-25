@@ -10,7 +10,12 @@ parser = argparse.ArgumentParser(
     description="Look into a directory; A pretty-printed ls",
     epilog="Made by @daikondev, 2023",
 )
-parser.add_argument("path", nargs="?", default=".")
+parser.add_argument(
+    "path",
+    nargs="?",
+    default=".",
+    help="path of the target directory; default: %(default)s",
+)
 args = parser.parse_args()
 
 target_dir = Path(args.path)
